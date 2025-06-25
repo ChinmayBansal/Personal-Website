@@ -25,9 +25,9 @@ const About = () => {
               <h1 className="name" style={{fontFamily: 'Georgia, serif', fontWeight: 'bold'}}>Chinmay Bansal</h1>
               <p className="title">Software Engineer</p>
               <div className="social-links">
-                <a href="#" className="social-link">LinkedIn</a>
-                <a href="#" className="social-link">GitHub</a>
-                <a href="#" className="social-link">Email</a>
+                <a href="https://www.linkedin.com/in/chinmaybansal30/" className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/ChinmayBansal" className="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="mailto:chinmaybansalsc@outlook.com" className="social-link">Email</a>
               </div>
             </div>
           </div>
@@ -55,11 +55,21 @@ const About = () => {
               <div className="quote-section">
                 <div className="quote-content">
                   <blockquote className="quote-text">
-                    "Just do it"
+                    “The most important thing is to enjoy your life—to be happy—it’s all that matters.” —Steve Jobs
+                  </blockquote>
+                </div>
+              </div>
+
+              <div className="quote-section">
+                <div className="quote-content">
+                  <blockquote className="quote-text">
+                   "I can accept failure. Everyone fails at something. But I can't accept not trying." —Michael Jordan
                   </blockquote>
                 </div>
               </div>
             </div>
+
+             
             
             <div className="skills-section">
               <h3 className="skills-title">What I Do</h3>
