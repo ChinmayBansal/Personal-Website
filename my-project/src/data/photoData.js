@@ -1,6 +1,9 @@
 // Photo data configuration
 
 export const photoData = [
+  // Temporarily empty to prevent loading errors
+  // Add your photos back once hosting is working
+  /*
   {
     id: 1,
     src: '/photos/photo1.jpg', 
