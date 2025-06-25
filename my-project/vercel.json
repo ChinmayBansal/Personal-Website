@@ -1,12 +1,8 @@
 {
-  "framework": "vite",
-  "buildCommand": "cd my-project && npm run build",
-  "outputDirectory": "my-project/dist",
-  "installCommand": "cd my-project && npm install",
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
