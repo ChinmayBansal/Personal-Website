@@ -93,20 +93,20 @@ export const photoData = [
     
     isFavorite: true
   },
-  // {
-  //   id: 14,
-  //   src: '/photos/DSC_1344.TIF', 
-  //   title: 'Photo 1',
-  //   
-  //   isFavorite: true
-  // },
-  // {
-  //   id: 15,
-  //   src: '/photos/DSC_1365.TIF', 
-  //   title: 'Photo 1',
-  //   
-  //   isFavorite: true
-  // },
+  {
+    id: 14,
+    src: '/photos/DSC_1344.TIF', 
+    title: 'Photo 1',
+    
+    isFavorite: true
+  },
+  {
+    id: 15,
+    src: '/photos/DSC_1365.TIF', 
+    title: 'Photo 1',
+    
+    isFavorite: true
+  },
   {
     id: 16,
     src: '/photos/DSC_1419.JPG', 
