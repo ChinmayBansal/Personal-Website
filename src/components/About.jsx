@@ -1,6 +1,18 @@
+import { useState } from 'react';
 import './About.css';
+import PdfModal from './PdfModal';
 
 const About = () => {
+  const [showResumeModal, setShowResumeModal] = useState(false);
+
+  const openResumeModal = (e) => {
+    e.preventDefault();
+    setShowResumeModal(true);
+  };
+
+  const closeResumeModal = () => {
+    setShowResumeModal(false);
+  };
   return (
     <section className="section about">
       <div className="container">
@@ -28,6 +40,7 @@ const About = () => {
                 <a href="https://www.linkedin.com/in/chinmaybansal30/" className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://github.com/ChinmayBansal" className="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="mailto:chinmaybansalsc@outlook.com" className="social-link">Email</a>
+                <a href="/Chinmay_Bansal_Resume.pdf" className="social-link" onClick={openResumeModal}>Resume</a>
               </div>
             </div>
           </div>
@@ -78,22 +91,27 @@ const About = () => {
                   <div className="skill-icon">💻</div>
                   <h4>Development</h4>
                   <p>Building modern web applications with cutting-edge technologies</p>
+                  <p>Currently building: <a href="https://stockteller.chinmaybansal.com" target="_blank">Stock Teller</a></p>
                 </div>
                 <div className="skill-item">
                   <div className="skill-icon">📷</div>
                   <h4>Photography</h4>
                   <p>Capturing moments and telling stories through visual narratives</p>
                 </div>
-                <div className="skill-item">
-                  <div className="skill-icon">🎨</div>
-                  <h4>Design</h4>
-                  <p>Creating intuitive and beautiful user experiences</p>
-                </div>
+               
               </div>
             </div>
           </div>
         </div>
       </div>
+      
+      {showResumeModal && (
+        <PdfModal 
+          imageUrl="/Chinmay_Bansal_Resume.jpg" 
+          pdfUrl="/Chinmay_Bansal_Resume.pdf"
+          onClose={closeResumeModal} 
+        />
+      )}
     </section>
   );
 };

@@ -41,31 +41,7 @@ const PhotoModal = ({ photo, onClose }) => {
         
         <div className="modal-info">
           <h3 className="modal-title">{photo.title}</h3>
-          <p className="modal-description">{photo.description}</p>
-          
-          <div className="modal-metadata">
-            <h4>Photo Details</h4>
-            <div className="metadata-grid">
-              <div className="metadata-item">
-                <span className="metadata-label">ISO:</span>
-                <span className="metadata-value">{photo.metadata.iso}</span>
-              </div>
-              <div className="metadata-item">
-                <span className="metadata-label">Aperture:</span>
-                <span className="metadata-value">{photo.metadata.aperture}</span>
-              </div>
-              <div className="metadata-item">
-                <span className="metadata-label">Shutter Speed:</span>
-                <span className="metadata-value">{photo.metadata.shutterSpeed}</span>
-              </div>
-              {photo.metadata.camera && (
-                <div className="metadata-item">
-                  <span className="metadata-label">Camera:</span>
-                  <span className="metadata-value">{photo.metadata.camera}</span>
-                </div>
-              )}
-            </div>
-          </div>
+        
         </div>
       </div>
     </div>

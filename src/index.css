@@ -5,7 +5,7 @@
   line-height: 1.7;
   font-weight: 400;
   
-  --primary-color: #478559;        /* Green Treeline */
+  --primary-color: #2d5aa0;        /* Deeper blue */
   --secondary-color: #161748;      /* Purple baseline */
   --accent-color: #f95d9b;         /* Pink highlight */
   --highlight-color: #39a0ca;      /* Bluewater lowlight */
@@ -14,8 +14,8 @@
   --bg-tertiary: #2a296d;          /* Even lighter purple variant */
   --text-color: #ffffff;           /* White text on dark background */
   --text-secondary: #39a0ca;       /* Blue for secondary text */
-  --text-light: #478559;
-  --border-color: rgba(71, 133, 89, 0.3);
+  --text-light: #2d5aa0;
+  --border-color: rgba(45, 90, 160, 0.3);
   --shadow-light: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 1px 2px -1px rgba(0, 0, 0, 0.3);
   --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
