@@ -11,7 +11,7 @@ export const photoData = [
   },
   {
     id: 2,
-    src: '/photos/DSC_0494.jpg', 
+    src: '/photos/DSC_0494.JPG', 
     title: 'Photo 1',
     
     isFavorite: true
