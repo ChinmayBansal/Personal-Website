@@ -1,18 +1,6 @@
-import { useState } from 'react';
 import './About.css';
-import PdfModal from './PdfModal';
 
 const About = () => {
-  const [showResumeModal, setShowResumeModal] = useState(false);
-
-  const openResumeModal = (e) => {
-    e.preventDefault();
-    setShowResumeModal(true);
-  };
-
-  const closeResumeModal = () => {
-    setShowResumeModal(false);
-  };
   return (
     <section className="section about">
       <div className="container">
@@ -40,7 +28,6 @@ const About = () => {
                 <a href="https://www.linkedin.com/in/chinmaybansal30/" className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://github.com/ChinmayBansal" className="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="mailto:chinmaybansalsc@outlook.com" className="social-link">Email</a>
-                <a href="/Chinmay_Bansal_Resume.pdf" className="social-link" onClick={openResumeModal}>Resume</a>
               </div>
             </div>
           </div>
@@ -53,14 +40,18 @@ const About = () => {
                 <h2 className="section-subtitle">About Me</h2>
                 <div className="bio-text">
                   <p>
-                    Welcome to my personal space! I'm passionate about creating meaningful experiences 
-                    through technology and design. Here you'll find a curated collection of my work, 
-                    thoughts, and the moments I've captured through my lens.
+                    Welcome to my personal website! I'm passionate about creating impact through technologies
+                    and creating experiences through photography. Here you'll find a collection of my professional
+                    and personal work.
                   </p>
                   <p>
                     Whether it's developing innovative solutions, exploring new technologies, or 
                     capturing the perfect shot, I'm always looking for ways to combine creativity 
                     with technical excellence.
+                  </p>
+
+                  <p>
+                    Contact me for professional inquiries through email/Linkedin!
                   </p>
                 </div>
               </div>
@@ -104,14 +95,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      
-      {showResumeModal && (
-        <PdfModal 
-          imageUrl="/Chinmay_Bansal_Resume.jpg" 
-          pdfUrl="/Chinmay_Bansal_Resume.pdf"
-          onClose={closeResumeModal} 
-        />
-      )}
     </section>
   );
 };
