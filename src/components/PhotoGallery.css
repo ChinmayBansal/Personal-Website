@@ -1,7 +1,6 @@
 /* Photo Gallery Section */
 .section.photo-gallery {
   min-height: 100vh;
-  background: var(--bg-color);
   position: relative;
 }
 
@@ -233,10 +232,7 @@
   border-radius: 2px;
 }
 
-.gallery-grid-container {
-  max-height: 80vh;
-  overflow-y: auto;
-  overflow-x: hidden;
+.gallery-masonry-container {
   padding: 1rem;
   background: rgba(42, 41, 109, 0.1);
   border-radius: 20px;
@@ -244,34 +240,24 @@
   margin-bottom: 3rem;
 }
 
-.gallery-grid-container::-webkit-scrollbar {
-  width: 8px;
+/* Masonry Layout */
+.gallery-masonry {
+  display: flex;
+  margin-left: -1rem; /* Gutter size offset */
+  width: auto;
 }
 
-.gallery-grid-container::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+.gallery-masonry-column {
+  padding-left: 1rem; /* Gutter size */
+  background-clip: padding-box;
 }
 
-.gallery-grid-container::-webkit-scrollbar-thumb {
-  background: rgba(42, 41, 109, 0.5);
-  border-radius: 10px;
-}
-
-.gallery-grid-container::-webkit-scrollbar-thumb:hover {
-  background: rgba(42, 41, 109, 0.7);
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  min-height: fit-content;
+.gallery-masonry-column > div {
+  margin-bottom: 1rem;
 }
 
 .gallery-item {
   position: relative;
-  aspect-ratio: 4/3;
   overflow: hidden;
   cursor: pointer;
   border-radius: 20px;
@@ -280,6 +266,8 @@
   backdrop-filter: blur(10px);
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-light);
+  width: 100%;
+  break-inside: avoid;
 }
 
 .gallery-item:hover {
@@ -289,8 +277,8 @@
 
 .gallery-item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
   transition: transform 0.3s ease;
   border-radius: 20px;
 }
@@ -369,10 +357,6 @@
   .carousel-container {
     margin: 0 2rem;
   }
-  
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 768px) {
@@ -403,14 +387,8 @@
   .gallery-subtitle {
     font-size: 2rem;
   }
-  
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  
-  .gallery-grid-container {
-    max-height: 70vh;
+
+  .gallery-masonry-container {
     padding: 0.75rem;
   }
   
@@ -437,12 +415,7 @@
     font-weight: normal;
   }
   
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .gallery-grid-container {
-    max-height: 60vh;
+  .gallery-masonry-container {
     padding: 0.5rem;
   }
 }

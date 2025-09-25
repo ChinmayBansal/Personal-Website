@@ -1,6 +1,5 @@
 .section.about {
   min-height: 100vh;
-  background: var(--bg-color);
   position: relative;
   color: var(--text-color);
 }
