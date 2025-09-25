@@ -82,20 +82,6 @@ export const photoData = [
   },
   {
     id: 12,
-    src: '/photos/DSC_1344.TIF', 
-    title: 'Veins of the Valley',
-    
-    isFavorite: true
-  },
-  {
-    id: 13,
-    src: '/photos/DSC_1365.TIF', 
-    title: 'Guarded by Giants',
-    
-    isFavorite: true
-  },
-  {
-    id: 14,
     src: '/photos/DSC_1419.JPG', 
     title: 'Tides in Motion',
     
