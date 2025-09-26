@@ -1,4 +1,5 @@
 import './About.css';
+import ShinyText from './ShinyText';
 
 const About = () => {
   return (
@@ -22,8 +23,12 @@ const About = () => {
               </div>
             </div>
             <div className="profile-details">
-              <h1 className="name" style={{fontFamily: 'Georgia, serif', fontWeight: 'bold'}}>Chinmay Bansal</h1>
-              <p className="title">Software Engineer</p>
+              <h1 className="name" style={{fontFamily: 'Georgia, serif', fontWeight: 'bold'}}>
+                <ShinyText text="Chinmay Bansal" disabled={false} speed={6} />
+              </h1>
+              <p className="title">
+                <ShinyText text="Software Engineer" disabled={false} speed={6} />
+              </p>
               <div className="social-links">
                 <a href="https://www.linkedin.com/in/chinmaybansal30/" className="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://github.com/ChinmayBansal" className="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
