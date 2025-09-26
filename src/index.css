@@ -4,8 +4,8 @@
   font-family: 'Ranade', system-ui, sans-serif;
   line-height: 1.7;
   font-weight: 400;
-  
-  --primary-color: #2d5aa0;        /* Deeper blue */
+  /*#2f7bf571*/
+  --primary-color: #2f7bf571;        /* Deeper blue */
   --secondary-color: #161748;      /* Purple baseline */
   --accent-color: #f95d9b;         /* Pink highlight */
   --highlight-color: #39a0ca;      /* Bluewater lowlight */

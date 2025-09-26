@@ -57,6 +57,12 @@ const Resume = () => {
         technologies: ["FastAPI", "React", "PostgreSQL", "FinBERT", "Vader NLP", "Reddit API", "AlphaVantage API", "NewsAPI"]
       },
       {
+        name: "Haystack Open Source Contributor",
+        description: "Implemented multi modal support for multiple chat generation models in Haystack framework \
+        to enable developers to build AI applications with text and images",
+        technologies: ["MongoDB", "Next.js", "React","AWS", "Spotify API", "LastFM API", "Postman"]
+      },
+      {
         name: "Spotifight",
         description: "Real time fantasy football web app with musical artists. Compete with your friends!",
         technologies: ["MongoDB", "Next.js", "React","AWS", "Spotify API", "LastFM API", "Postman"]
