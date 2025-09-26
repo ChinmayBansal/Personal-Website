@@ -13,10 +13,10 @@ function App() {
     <div className="app">
       <div className="silk-background">
         <Silk
-          speed={5}
-          scale={1}
-          color="#041A40"
-          noiseIntensity={1.5}
+          speed={10}
+          scale={1.2}
+          color="#5500b2"
+          noiseIntensity={0}
           rotation={0}
         />
       </div>
